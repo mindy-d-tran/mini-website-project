@@ -1,0 +1,16 @@
+#comm-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#comm-display img{
+  width: 30vw;
+  height: 30vw;
+  object-fit: contain;
+  background-color: white;
+
+  border: 2vw solid plum;
+  border-radius: 5vw;
+  overflow: hidden;
+}
