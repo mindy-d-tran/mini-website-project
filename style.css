@@ -1,16 +1,43 @@
-#comm-display {
+.comm-display {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-#comm-display img{
-  width: 30vw;
+#img-animation {
+  width: 25vw;
   height: 30vw;
-  object-fit: contain;
-  background-color: white;
-
-  border: 2vw solid plum;
-  border-radius: 5vw;
-  overflow: hidden;
+  background-color: pink;
+  /* overflow: hidden; */
 }
+  .img-container {    
+    position: relative;
+    border: 1em solid black;
+    border-radius: 5vw;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+  }
+  .img-container:hover {
+    z-index: 1;
+  }
+  .img-container:not(:hover) {
+    z-index: 0;
+    /* opacity: 0.6; */
+  }
+  .img-container img{
+    width: 25vw;
+    height: 25vw;
+    object-fit: contain;
+  }
+    /* .img-container img:not(:hover) {
+      opacity: 0.6;
+    } */
+    
+    #img-1{
+      rotate: 30deg;
+    }
+    #img-2{
+      position: relative;
+      top: -100%;
+    }

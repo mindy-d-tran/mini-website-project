@@ -9,9 +9,10 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>gguokka's Commission</title>
   </head>
+
   <body>
     <header>
       <h1 class="text-center">GGUOKKA'S COMMISSIONS</h1>
@@ -81,7 +82,9 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Illustration</a></li>
-                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
                   <li><a class="dropdown-item" href="#">VTuber Model</a></li>
                   <li><a class="dropdown-item" href="#">Rigging</a></li>
                 </ul>
@@ -95,9 +98,18 @@
     </header>
 
     <main>
-      <div id="comm-display">
-      <img src="img/gguokka_LazuLightPP_BG.png" alt="">
+      <div class="comm-display">
+        <div id="img-animation">
+          <div id="img-1" class="img-container">
+            <img src="img/gguokka_LazuLightPP_BG.png" alt="full render example" />
+            <h3>Full Render</h3>
+          </div>
 
+          <div id="img-2" class="img-container">
+            <img src="img/guo_waa.png" alt="sketch example" />
+            <h3>Sketch</h3>
+          </div>
+        </div>
         <div id="comm-info" class="">
           <h3>Prices</h3>
           <table id="comm-price" class="table table-hover">
@@ -106,8 +118,9 @@
                 <th scope="col">Style</th>
                 <th scope="col">Headshot</th>
                 <th scope="col">Full Body</th>
-
+              </tr>
             </thead>
+
             <tbody>
               <tr>
                 <th scope="row">Sketched</th>
@@ -121,8 +134,8 @@
               </tr>
             </tbody>
           </table>
+        </div>
       </div>
-
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
