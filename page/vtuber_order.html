@@ -55,14 +55,18 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="page/illust_order.html"
+                    <a class="dropdown-item" href="./page/illust_order.html"
                       >Illustration</a
                     >
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
-                  <li><a class="dropdown-item" href="#">VTuber</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./vtuber_order.html"
+                      >VTuber</a
+                    >
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -72,94 +76,189 @@
       <!-- end of navbar -->
     </header>
 
-    <section class="comm-container">
-      <h1>Art Commission Form</h1>
+    <main>
+      <h1>VTuber Commission</h1>
       <form action="#">
         <section id="gen-info">
           <h2>General Information</h2>
           <div class="mb-3">
-            <label for="user-name"> Name/Nickname </label>
-            <input type="text" name="user-name" id="user-name" />
+            <label class="form-label" for="user-name"> Name/Nickname </label>
+            <input class="form-control" type="text" name="user-name" id="user-name" />
           </div>
           <div class="mb-3">
-            <label for="user-email"> Email </label>
-            <input type="email" name="user-email" id="user-email" />
+            <label class="form-label" for="user-email"> Email </label>
+            <input class="form-control" type="email" name="user-email" id="user-email" />
           </div>
           <div class="mb-3">
-            <label for="contact-info">Preferred form of contact </label>
-            <input type="text" name="contact-info" id="contact-info" />
-            <p class="form-text">If SNS, please send link ex: https://twitter.com/gguokka</p>
+            <label class="form-label" for="contact-info">Preferred form of contact </label>
+            <p class="form-text">
+              If social media, please send link ex: https://twitter.com/gguokka
+            </p>
+            <input class="form-control" type="text" name="contact-info" id="contact-info" />
           </div>
         </section>
 
         <section id="comm-info">
           <h2>Commission Information</h2>
-          <fieldset>
-            <legend>Commission Style</legend>
-            <label for="comm-type" class="form-check-label">
-              <input
-                type="radio"
-                name="radio"
-                id="full-body"
-                class="form-check-input"
-              />
-              Full Body
-            </label>
-            <label for="comm-type">
-              <input type="radio" name="radio" id="headshot" />Headshot
-            </label>
-          </fieldset>
-          <label for="ref-img">
-            Refence image of character want to be drawn
-            <input type="file" name="ref-img" id="ref-img" />
-          </label>
-          <label for="addition-chara-info">
-            Character Additional Information Are there any extra info you want
-            to provide/that I must know?
-            <input
-              type="text"
+          <div>
+            <p class="form-label">Commission Type</p>
+            <fieldset>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="comm-type"
+                  id="art"
+                />
+                <label class="form-check-label" for="comm-type">Art Only</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="comm-type"
+                  id="rig"
+                />
+                <label class="form-check-label" for="comm-type">Rig Only</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="comm-type"
+                  id="art-rig"
+                />
+                <label class="form-check-label" for="comm-type"
+                  >Art & Rig</label
+                >
+              </div>
+            </fieldset>
+          </div>
+
+          <div>
+            <label class="form-label" for="ref-img"
+              >Refence image of character want to be drawn</label
+            >
+            <input class="form-control" type="file" name="ref-img" id="ref-img" />
+          </div>
+
+          <div>
+            <label class="form-label" for="addition-chara-info"
+              >Character Additional Information</label>
+            <p class="form-text">
+              Are there any extra info you want to provide/that I must know?
+            </p>
+            <textarea
+              class="form-control"
               name="addition-chara-info"
               id="addition-chara-info"
-            />
-          </label>
-          <label for="addition-info"
-            >Commission Additional Information. Any poses/ideas you had in mind?
-            <input type="text" name="addition-info" id="addition-info" />
-          </label>
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div>
+            <p class="form-label">Commission Add ons</p>
+            <fieldset>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="addon-opt"
+                  id="mouth-x"
+                />
+                <label class="form-check-label" for="">Mouth X</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="addon-opt"
+                  id="tongue"
+                />
+                <label class="form-check-label" for="">Tongue</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="addon-opt"
+                  id="acc-toggle"
+                />
+                <label class="form-check-label" for=""
+                  >Accessories Toggle</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="addon-opt"
+                  id="outfit-toggle"
+                />
+                <label class="form-check-label" for="">Outfit Toggle</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="addon-opt"
+                  id="arm-swap"
+                />
+                <label class="form-check-label" for="">Arm Swap</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="addon-opt"
+                  id="animal-ear"
+                />
+                <label class="form-check-label" for="">Animal Ears</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="addon-opt"
+                  id="hair-swap"
+                />
+                <label class="form-check-label" for="">Hair Swap</label>
+              </div>
+            </fieldset>
+          </div>
         </section>
 
         <section id="usage-info">
           <h2>Usage Rights</h2>
+          <p class="form-label">Will this commission be private</p>
+          <p class="form-text">I cannot post online</p>
           <fieldset>
-            <p>Commercial or Personal Use?</p>
-            <p>
-              Commercial use = using it for profit e.g. stream assets, youtube
-              thumbnails, merchandise design
-            </p>
-            <input
-              type="radio"
-              name="use-type"
-              id="commercial-use"
-              value="Commercial Use"
-            />
-            <label for="use-type">Commercial Use</label>
-            <input
-              type="radio"
-              name="use-type"
-              id="personal-use"
-              value="Personal Use"
-            />
-            <label for="use-type">Personal Use</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="is-private"
+                id="yes"
+                value="Yes"
+              />
+              <label class="form-check-label" for="is-private">Yes</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="is-private"
+                id="no"
+                value="No"
+              />
+              <label class="form-check-label" for="is-private">No</label>
+            </div>
           </fieldset>
-          <p>Will this commission be private?</p>
-
-          <input type="radio" name="is-private" id="yes" value="Yes" />
-          <label for="is-private">Yes</label>
-          <input type="radio" name="is-private" id="no" value="No" />
-          <label for="is-private">No</label>
         </section>
+        <button type="submit" class="btn btn-light">Submit</button>
       </form>
-    </section>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
