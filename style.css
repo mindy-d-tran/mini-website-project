@@ -66,24 +66,53 @@ code from https://www.w3schools.com/howto/howto_css_flip_card.asp */
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-image: url(img/gguokka_LazuLightPP_BG.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #bbb;
   /* color: white; */
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-image: url(img/guo_waa.png);
   background-color: dodgerblue;
-  background-size: contain;
   /* color: black; */
   transform: rotateY(180deg);
 }
+#img-chibi-cell {
+  background-image: url(img/gguokka_LazuLightPP_BG.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-/* text outline from https://www.codesdope.com/blog/article/adding-outline-to-text-using-css/ */
+#img-chibi-sketch {
+  background-image: url(img/guo_waa.png);
+  background-size: contain;
+}
+
+#img-vt-model{
+  background-image: url(img/guo_chibi.png);
+  background-size: contain;
+}
+
+#img-vt-rig {
+  background-image: url(img/Pengu_Finish.gif);
+  background-size: contain;
+}
+
+/* #img-vta1, #img-vta2 video{
+  height: 30vw;
+  width: 30vw;
+} */
+
+#img-vta1 {
+  background-image: url(img/guo_moverment_range.gif);
+  background-size: contain;
+}
+
+#img-vta2 {
+  background-image: url(img/Lin_Mouth_X.gif);
+  background-size: contain;
+} 
+/* text outline from https://www.codesdope.com/blog/article/adding-outline-to-text-using-css/*/
 .img-container > p{
   color: #fff;
   -webkit-text-stroke: 2px rgb(42, 28, 53);
