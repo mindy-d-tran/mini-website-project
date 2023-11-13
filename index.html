@@ -68,9 +68,13 @@
       <!-- end of navbar -->
     </header>
     <main>
+      <!-- start of comm info container  
+         used to format text to first baseline-->
       <div id="comm-container">
+        <!-- start of chibi info -->
         <section id="info-illustration">
         <h2>Illustrations</h2>
+        <!-- start of comm info for chibi -->
         <div class="comm-display">
           <div class="flip-card">
             <div class="flip-card-inner">
@@ -84,9 +88,9 @@
             </div>
           </div>
 
-          <div id="comm-info">
+          <div class="comm-info">
             <h3>Prices</h3>
-            <table id="comm-price" class="table table-hover">
+            <table id="chibi-price" class="table table-hover">
               <thead>
                 <tr>
                   <th scope="col">Style</th>
@@ -114,97 +118,101 @@
             </ul>
           </div>
         </div>
-      </section>
+        <!-- start of comm info for chibi -->
+        <button>Order Now</button>
+        </section>
+        <!-- end of chibi info -->
 
-      <section id="info-vtuber">
-        <h2>VTuber</h2>
-        <div class="comm-display">
-          <div id="comm-info">
-            <h3>Prices</h3>
-            <table id="comm-price" class="table table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Art</th>
-                  <th scope="col">Rig</th>
-                  <th scope="col">Art & Rig</th>
-                </tr>
-              </thead>
+        <section id="info-vtuber">
+          <h2>VTuber</h2>
+          <div class="comm-display">
+            <div class="comm-info">
+              <h3>Prices</h3>
+              <table id="vtuber-price" class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Art</th>
+                    <th scope="col">Rig</th>
+                    <th scope="col">Art & Rig</th>
+                  </tr>
+                </thead>
 
-              <tbody>
-                <tr>
-                  <td>$300</td>
-                  <td>$350</td>
-                  <td>$600</td>
-                </tr>
-              </tbody>
-            </table>
-            
-            <h4>Additional Note</h4>
-            <ul>
-              <li>The design will get simplified if it's too detailed.</li>
-              <li>Prices listed above are starting prices. 
-                <ul>
-                  <li>For more details please scroll down.</li>
-                </ul></li>
-              <li>All V-Tuber commissions come with commercial use.</li>
-            </ul>
-          </div>
+                <tbody>
+                  <tr>
+                    <td>$300</td>
+                    <td>$350</td>
+                    <td>$600</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <h4>Additional Note</h4>
+              <ul>
+                <li>The design will get simplified if it's too detailed.</li>
+                <li>Prices listed above are starting prices. 
+                  <ul>
+                    <li>For more details please scroll down.</li>
+                  </ul></li>
+                <li>All V-Tuber commissions come with commercial use.</li>
+              </ul>
+            </div>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front img-container">
-                <p class="fs-1 fw-bold">Cell Shaded</p>
-              </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front img-container">
+                  <p class="fs-1 fw-bold">Cell Shaded</p>
+                </div>
 
-              <div class="flip-card-back img-container">
-                <p class="fs-1 fw-bold">Sketch</p>
+                <div class="flip-card-back img-container">
+                  <p class="fs-1 fw-bold">Sketch</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="info-vtuber-addon-fees">
-        <h2>Additional Fees</h2>
-        <div class="comm-display">
-          <div id="comm-info">
-            <table id="comm-price" class="table table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Type</th>
-                  <th scope="col">Fee</th>
-                </tr>
-              </thead>
+        <section id="info-vtuber-addon-fees">
+          <h2>Additional Fees</h2>
+          <div class="comm-display">
+            <div class="comm-info">
+              <table id="addon-price" class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Fee</th>
+                  </tr>
+                </thead>
 
-              <tbody>
-                <tr>
-                  <td>Design complexity</td>
-                  <td>$15 - $400+</td>
-                </tr>
-                <tr>
-                  <td>Asymetrical Pose/ Alignment</td>
-                  <td>$50+</td>
-                </tr>
-                <tr>
-                  <td>Mouth X</td>
-                  <td>$15</td>
-                </tr>
-                <tr>
-                  <td>Animal Ears/ Tails</td>
-                  <td>$40+</td>
-                </tr>
-                <tr>
-                  <td>Toggles</td>
-                  <td>$15+</td>
-                </tr>
-              </tbody>
-            </table>
+                <tbody>
+                  <tr>
+                    <td>Design complexity</td>
+                    <td>$15 - $400+</td>
+                  </tr>
+                  <tr>
+                    <td>Asymetrical Pose/ Alignment</td>
+                    <td>$50+</td>
+                  </tr>
+                  <tr>
+                    <td>Mouth X</td>
+                    <td>$15</td>
+                  </tr>
+                  <tr>
+                    <td>Animal Ears/ Tails</td>
+                    <td>$40+</td>
+                  </tr>
+                  <tr>
+                    <td>Toggles</td>
+                    <td>$15+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-      </section>
+        </section>
       </div>
-      
+      <!-- end of comm info container -->
 
-      <!-- nav for long page -->
+      <!-- start of circle nav for long page -->
       <div class="circle-nav">
         <div>
           <a href="#info-illustration">●</a>
@@ -216,7 +224,9 @@
           <a href="#info-vtuber-addon-fees">●</a>
         </div>
       </div>
+      <!-- end of circle nav -->
     </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
