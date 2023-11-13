@@ -19,7 +19,7 @@
       start of navbar-->
       <nav class="navbar navbar-expand-lg bg-body-tertiary bg">
         <div class="container-fluid">
-          <a class="navbar-brand " href="#">gguokka</a>
+          <a class="navbar-brand" href="#">gguokka</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -38,7 +38,9 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Illustration</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Illustration</a
+                >
               </li>
 
               <li class="nav-item dropdown">
@@ -82,46 +84,102 @@
       <!-- end of navbar -->
     </header>
     <main>
-      <div class="comm-display">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front img-container">
-              <p class="fs-1 fw-bold">Cell Shaded</p>
-            </div>
+      <section id="info-illustration">
+        <h2>Illustrations</h2>
+        <div class="comm-display">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front img-container">
+                <p class="fs-1 fw-bold">Cell Shaded</p>
+              </div>
 
-            <div class="flip-card-back img-container">
-              <p class="fs-1 fw-bold">Sketch</p>
+              <div class="flip-card-back img-container">
+                <p class="fs-1 fw-bold">Sketch</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="comm-info">
+            <h3>Prices</h3>
+            <table id="comm-price" class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Style</th>
+                  <th scope="col">Headshot</th>
+                  <th scope="col">Full Body</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th scope="row">Sketched</th>
+                  <td>$20</td>
+                  <td>$60</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cell Shaded</th>
+                  <td>$40</td>
+                  <td>$85</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Additional Note</h4>
+            <p>The design will get simplified if it's too detailed. ​</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="info-vtuber">
+        <h2>VTuber Model</h2>
+        <div class="comm-display">
+          <div id="comm-info">
+            <h3>Prices</h3>
+            <table id="comm-price" class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Style</th>
+                  <th scope="col">Headshot</th>
+                  <th scope="col">Full Body</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th scope="row">Sketched</th>
+                  <td>$20</td>
+                  <td>$60</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cell Shaded</th>
+                  <td>$40</td>
+                  <td>$85</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Additional Note</h4>
+            <p>The design will get simplified if it's too detailed.</p>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front img-container">
+                <p class="fs-1 fw-bold">Cell Shaded</p>
+              </div>
+
+              <div class="flip-card-back img-container">
+                <p class="fs-1 fw-bold">Sketch</p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div id="comm-info" class="">
-          <h3>Prices</h3>
-          <table id="comm-price" class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Style</th>
-                <th scope="col">Headshot</th>
-                <th scope="col">Full Body</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <th scope="row">Sketched</th>
-                <td>$20</td>
-                <td>$60</td>
-              </tr>
-              <tr>
-                <th scope="row">Cell Shaded</th>
-                <td>$40</td>
-                <td>$85</td>
-              </tr>
-            </tbody>
-          </table>
-          <h4>Additional Note</h4>
-          <p>The design will get simplified if it's too detailed. ​</p>
-
+      <div class="circle-nav">
+        <div>
+          <a href="#info-illustration">●</a>
+        </div>
+        <div>
+          <a href="#info-vtuber">●</a>
         </div>
       </div>
     </main>
