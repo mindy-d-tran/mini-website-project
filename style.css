@@ -7,14 +7,13 @@ main {
 section[id*="info"] {
   margin: 10vh 0;
   padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 section[id="info-illustration"] {
   margin-top: 5vh;
-}
-
-#info-vtuber-addon-fee{
-  flex-grow: 1;
 }
 
 #comm-container{
@@ -24,7 +23,7 @@ section[id="info-illustration"] {
 }
 
 .comm-display {
-  margin-top: 5em;
+  margin-top: 3em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -11,6 +11,22 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>gguokka's Commission</title>
+    <style>
+      /* start of fake button */
+      .fake-btn {
+        text-decoration: none;
+        padding: 1em 2em;
+        background-color: #fff;
+        color: #212529;
+        border-radius: 2%;
+        align-self: center;
+        margin-top: 3em;
+        box-sizing: border-box;
+
+        /* transition: padding 1s; */
+      }
+      /* end of fake button */
+    </style>
   </head>
 
   <body data-bs-theme="dark">
@@ -54,7 +70,11 @@
                   Request
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="page/illust_order.html">Illustration</a></li>
+                  <li>
+                    <a class="dropdown-item" href="page/illust_order.html"
+                      >Illustration</a
+                    >
+                  </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
@@ -73,53 +93,52 @@
       <div id="comm-container">
         <!-- start of chibi info -->
         <section id="info-illustration">
-        <h2>Illustrations</h2>
-        <!-- start of comm info for chibi -->
-        <div class="comm-display">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front img-container">
-                <p class="fs-1 fw-bold">Cell Shaded</p>
-              </div>
+          <h2>Illustrations</h2>
+          <!-- start of comm info for chibi -->
+          <div class="comm-display">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front img-container">
+                  <p class="fs-1 fw-bold">Cell Shaded</p>
+                </div>
 
-              <div class="flip-card-back img-container">
-                <p class="fs-1 fw-bold">Sketch</p>
+                <div class="flip-card-back img-container">
+                  <p class="fs-1 fw-bold">Sketch</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="comm-info">
-            <h3>Prices</h3>
-            <table id="chibi-price" class="table table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Style</th>
-                  <th scope="col">Headshot</th>
-                  <th scope="col">Full Body</th>
-                </tr>
-              </thead>
+            <div class="comm-info">
+              <h3>Prices</h3>
+              <table id="chibi-price" class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Style</th>
+                    <th scope="col">Headshot</th>
+                    <th scope="col">Full Body</th>
+                  </tr>
+                </thead>
 
-              <tbody>
-                <tr>
-                  <th scope="row">Sketched</th>
-                  <td>$20</td>
-                  <td>$60</td>
-                </tr>
-                <tr>
-                  <th scope="row">Cell Shaded</th>
-                  <td>$40</td>
-                  <td>$85</td>
-                </tr>
-              </tbody>
-            </table>
-            <h4>Additional Note</h4>
-            <ul>
-              <li>The design will get simplified if it's too detailed.</li>
-            </ul>
+                <tbody>
+                  <tr>
+                    <th scope="row">Sketched</th>
+                    <td>$20</td>
+                    <td>$60</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cell Shaded</th>
+                    <td>$40</td>
+                    <td>$85</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4>Additional Note</h4>
+              <ul>
+                <li>The design will get simplified if it's too detailed.</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <!-- start of comm info for chibi -->
-        <button>Order Now</button>
+          <a href="page/illust_order.html" class="fake-btn">Order Now</a>
         </section>
         <!-- end of chibi info -->
 
@@ -145,14 +164,16 @@
                   </tr>
                 </tbody>
               </table>
-              
+
               <h4>Additional Note</h4>
               <ul>
                 <li>The design will get simplified if it's too detailed.</li>
-                <li>Prices listed above are starting prices. 
+                <li>
+                  Prices listed above are starting prices.
                   <ul>
                     <li>For more details please scroll down.</li>
-                  </ul></li>
+                  </ul>
+                </li>
                 <li>All V-Tuber commissions come with commercial use.</li>
               </ul>
             </div>
@@ -169,6 +190,7 @@
               </div>
             </div>
           </div>
+          <a href="page/illust_order.html" class="fake-btn">Order Now</a>
         </section>
 
         <section id="info-vtuber-addon-fees">
@@ -226,7 +248,6 @@
       </div>
       <!-- end of circle nav -->
     </main>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
