@@ -1,11 +1,17 @@
+/* body{
+  background-color: aqua;
+} */
 .comm-display {
+  margin-top: 5em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  column-gap: 1em;
+  column-gap: 5em;
 }
 
+/* start of the card flip
+code from https://www.w3schools.com/howto/howto_css_flip_card.asp */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
@@ -33,8 +39,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 5vw;
-  overflow: hidden;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
@@ -46,7 +50,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #bbb;
-  color: black;
+  /* color: white; */
 }
 
 /* Style the back side */
@@ -54,6 +58,14 @@
   background-image: url(img/guo_waa.png);
   background-color: dodgerblue;
   background-size: contain;
-  color: white;
+  /* color: black; */
   transform: rotateY(180deg);
 }
+
+
+/* text outline from https://www.codesdope.com/blog/article/adding-outline-to-text-using-css/ */
+.img-container > p{
+  color: #fff;
+  -webkit-text-stroke: 2px rgb(42, 28, 53);
+}
+/* end of card flip */
