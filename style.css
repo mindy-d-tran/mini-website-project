@@ -1,5 +1,20 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 section[id*="info"] {
-  margin-bottom: 10vh;
+  margin: 10vh 0;
+  padding: 1em 0;
+}
+
+section[id="info-illustration"] {
+  margin-top: 5vh;
+}
+
+#info-vtuber-addon-fee{
+  flex-grow: 1;
 }
 
 .comm-display {
@@ -74,17 +89,12 @@ code from https://www.w3schools.com/howto/howto_css_flip_card.asp */
 .circle-nav{
   position: fixed;
   right: 1em;
-  top: 47vh;
+  top: 44vh;
 
 }
 .circle-nav a {
   text-decoration: none;
   color: #fff;
   opacity: 0.5;
-}
-
-
-.circle-nav a:hover {
-  display: inline;
 }
 /* end of circle nav style */
