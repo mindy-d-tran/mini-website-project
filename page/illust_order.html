@@ -15,64 +15,93 @@
 
   <body data-bs-theme="dark">
     <header>
-        <!-- navbar code from bootstrap documents 
+      <!-- navbar code from bootstrap documents 
         start of navbar-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">gguokka</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../index.html"
-                    >Commision Info</a
-                  >
-                </li>
-  
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle active"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Request
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="page/illust_order.html">Illustration</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li><a class="dropdown-item" href="#">VTuber</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">gguokka</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Commision Info</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Request
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="page/illust_order.html"
+                      >Illustration</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">VTuber</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-        </nav>
-        <!-- end of navbar -->
-      </header>
+        </div>
+      </nav>
+      <!-- end of navbar -->
+    </header>
 
-      <section>
-        <form action="">
+    <section>
+      <h1>Art Commission Form</h1>
+      <form action="">
+        <section>
+          <h2>General Information</h2>
+          <div class="mb-3">
+            <label for="user-name">
+              Name/Nickname
+              <input type="text" name="user-name" id="user-name" />
+            </label>
+          </div>
+          <div class="mb-3">
+            <label for="user-email">
+              Email <input type="email" name="user-email" id="user-email" />
+            </label>
+          </div>
+          <div class="mb-3">
+            <label for="contact-info">
+              Preferred form of contact
+              <input type="text" name="contact-info" id="contact-info" />
+            </label>
+            <p>if sns, please link ex: https://twitter.com/gguokka</p>
+          </div>
+        </section>
 
-        </form>
-      </section>
+        <section>
+          <h2>Commission Information</h2>
+        </section>
+      </form>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
