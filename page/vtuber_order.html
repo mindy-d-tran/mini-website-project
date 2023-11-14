@@ -9,7 +9,24 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      main > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      div#btn-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      section {
+        border-bottom: 1px solid white;
+      }
+      main section:nth-of-type(3) {
+        border-bottom: 0px;
+      }
+    </style>
     <title>VTuber Commission Form</title>
   </head>
 
@@ -55,7 +72,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="./page/illust_order.html"
+                    <a class="dropdown-item" href="./illust_order.html"
                       >Illustration</a
                     >
                   </li>
@@ -77,237 +94,248 @@
     </header>
 
     <main>
-      <h1 class="mb-4">VTuber Commission Form</h1>
-      <form action="#">
-        <section id="gen-info" class="mb-4">
-          <h2 class="mb-4">General Information</h2>
-          <div class="row mb-3">
-            <label class="col-sm-2 col-form-label" for="user-name">
-              Name/Nickname
-            </label>
-            <div class="col-sm-8">
-              <input
-                class="form-control"
-                type="text"
-                name="user-name"
-                id="user-name"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label class="col-sm-2 col-form-label" for="user-email">
-              Email
-            </label>
-            <div class="col-sm-8">
-              <input
-                class="form-control"
-                type="email"
-                name="user-email"
-                id="user-email"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label class="col-sm-2 col-form-label" for="contact-info"
-              >Preferred form of contact
-            </label>
-            <div class="col-sm-8">
-              <input
-                class="form-control"
-                type="text"
-                name="contact-info"
-                id="contact-info"
-                required
-              />
-              <p class="form-text">
-                If social media, please send link ex:
-                https://twitter.com/gguokka
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="comm-info">
-          <h2 class="mb-4">Commission Information</h2>
-
-          <fieldset class="row mb-3">
-            <legend class="col-sm-2 col-form-label">Commission Type</legend>
-            <div class="col-sm-8">
-              <div class="form-check">
+      <div class="my-4">
+        <h1 class="mb-5">VTuber Commission Form</h1>
+        <form action="#">
+          <section id="gen-info" class="mb-4">
+            <h2 class="mb-4">General Information</h2>
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label" for="user-name">
+                Name/Nickname
+              </label>
+              <div class="col-sm-8">
                 <input
-                  class="form-check-input"
-                  type="radio"
-                  name="comm-type"
-                  id="art"
-                />
-                <label class="form-check-label" for="comm-type">Art Only</label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="comm-type"
-                  id="rig"
-                />
-                <label class="form-check-label" for="comm-type">Rig Only</label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="comm-type"
-                  id="art-rig"
+                  class="form-control"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
                   required
                 />
-                <label class="form-check-label" for="comm-type"
-                  >Art & Rig</label
-                >
               </div>
             </div>
-          </fieldset>
 
-          <div class="row mb-3">
-            <label class="col-sm-2 col-form-label" for="ref-img"
-              >Reference image</label
-            >
-            <div class="col-sm-8">
-              <input
-                class="form-control"
-                type="file"
-                name="ref-img"
-                id="ref-img"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label class="col-sm-2 col-form-label" for="addition-chara-info"
-              >Character Additional Information</label
-            >
-            <div class="col-sm-8">
-              <textarea
-                class="form-control"
-                name="addition-chara-info"
-                id="addition-chara-info"
-                rows="5"
-                placeholder="Is there any extra info you want to provide/that I must know?"
-              ></textarea>
-            </div>
-          </div>
-
-          <fieldset class="row mb-3">
-            <legend class="col-sm-2 col-form-label">Commission Add ons</legend>
-            <div class="col-sm-8">
-              <div class="form-check">
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label" for="user-email">
+                Email
+              </label>
+              <div class="col-sm-8">
                 <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="addon-opt"
-                  id="mouth-x"
+                  class="form-control"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  required
                 />
-                <label class="form-check-label" for="">Mouth X</label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="addon-opt"
-                  id="tongue"
-                />
-                <label class="form-check-label" for="">Tongue</label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="addon-opt"
-                  id="acc-toggle"
-                />
-                <label class="form-check-label" for=""
-                  >Accessories Toggle</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="addon-opt"
-                  id="outfit-toggle"
-                />
-                <label class="form-check-label" for="">Outfit Toggle</label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="addon-opt"
-                  id="arm-swap"
-                />
-                <label class="form-check-label" for="">Arm Swap</label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="addon-opt"
-                  id="animal-ear"
-                />
-                <label class="form-check-label" for="">Animal Ears</label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="addon-opt"
-                  id="hair-swap"
-                />
-                <label class="form-check-label" for="">Hair Swap</label>
               </div>
             </div>
-          </fieldset>
-        </section>
 
-        <section id="usage-info">
-          <h2 class="mb-4">Usage Rights</h2>
-          <fieldset class="row mb-3">
-            <div class="col-sm-2">
-              <legend class="col-form-label">
-                Will this commission be private
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label" for="contact-info"
+                >Preferred form of contact
+              </label>
+              <div class="col-sm-8">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="contact-info"
+                  id="contact-info"
+                  required
+                />
+                <p class="form-text">
+                  If social media, please send link ex:
+                  https://twitter.com/gguokka
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="comm-info">
+            <h2 class="mb-4">Commission Information</h2>
+
+            <fieldset class="row mb-3">
+              <legend class="col-sm-3 col-form-label">Commission Type</legend>
+              <div class="col-sm-8">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="comm-type"
+                    id="art"
+                  />
+                  <label class="form-check-label" for="comm-type"
+                    >Art Only</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="comm-type"
+                    id="rig"
+                  />
+                  <label class="form-check-label" for="comm-type"
+                    >Rig Only</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="comm-type"
+                    id="art-rig"
+                    required
+                  />
+                  <label class="form-check-label" for="comm-type"
+                    >Art & Rig</label
+                  >
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label" for="ref-img"
+                >Reference image</label
+              >
+              <div class="col-sm-8">
+                <input
+                  class="form-control"
+                  type="file"
+                  name="ref-img"
+                  id="ref-img"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label" for="addition-chara-info"
+                >Character Additional Information</label
+              >
+              <div class="col-sm-8">
+                <textarea
+                  class="form-control"
+                  name="addition-chara-info"
+                  id="addition-chara-info"
+                  rows="5"
+                  placeholder="Is there any extra info you want to provide/that I must know?"
+                ></textarea>
+              </div>
+            </div>
+
+            <fieldset class="row mb-3">
+              <legend class="col-sm-3 col-form-label">
+                Commission Add-ons
               </legend>
-              <p class="form-text">I cannot post online</p>
-            </div>
-            <div class="col-sm-8">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="is-private"
-                  id="yes"
-                  value="Yes"
-                />
-                <label class="form-check-label" for="is-private">Yes</label>
+              <div class="col-sm-8">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="addon-opt"
+                    id="mouth-x"
+                  />
+                  <label class="form-check-label" for="">Mouth X</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="addon-opt"
+                    id="tongue"
+                  />
+                  <label class="form-check-label" for="">Tongue</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="addon-opt"
+                    id="acc-toggle"
+                  />
+                  <label class="form-check-label" for=""
+                    >Accessories Toggle</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="addon-opt"
+                    id="outfit-toggle"
+                  />
+                  <label class="form-check-label" for="">Outfit Toggle</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="addon-opt"
+                    id="arm-swap"
+                  />
+                  <label class="form-check-label" for="">Arm Swap</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="addon-opt"
+                    id="animal-ear"
+                  />
+                  <label class="form-check-label" for="">Animal Ears</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="addon-opt"
+                    id="hair-swap"
+                  />
+                  <label class="form-check-label" for="">Hair Swap</label>
+                </div>
               </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="is-private"
-                  id="no"
-                  value="No"
-                  required
-                />
-                <label class="form-check-label" for="is-private">No</label>
+            </fieldset>
+          </section>
+
+          <section id="usage-info">
+            <h2 class="mb-4">Usage Rights</h2>
+            <fieldset class="row mb-3">
+              <div class="col-sm-3">
+                <legend class="col-form-label">
+                  Will this commission be private
+                </legend>
+                <p class="form-text">I cannot post online</p>
               </div>
-            </div>
-          </fieldset>
-        </section>
-        <button type="submit" class="btn btn-light">Submit</button>
-      </form>
+              <div class="col-sm-8">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="is-private"
+                    id="yes"
+                    value="Yes"
+                  />
+                  <label class="form-check-label" for="is-private">Yes</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="is-private"
+                    id="no"
+                    value="No"
+                    required
+                  />
+                  <label class="form-check-label" for="is-private">No</label>
+                </div>
+              </div>
+            </fieldset>
+          </section>
+          <div id="btn-container">
+            <button type="submit" class="btn btn-danger">Cancel</button>
+            <button type="submit" class="btn btn-light">Submit</button>
+          </div>
+        </form>
+      </div>
     </main>
 
     <script
