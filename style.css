@@ -5,7 +5,7 @@ main {
   align-items: center;
 }
 section[id*="info"] {
-  margin: 10vh 0;
+  margin: 5vh 0;
   padding: 1em 0;
   display: flex;
   flex-direction: column;
@@ -14,6 +14,16 @@ section[id*="info"] {
 
 section[id="info-illustration"] {
   margin-top: 5vh;
+}
+
+div[class="comm-info"] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+div[class="comm-info"] a {
+  align-self: center;
 }
 
 #comm-container{
