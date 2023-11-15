@@ -140,5 +140,11 @@ code from https://www.w3schools.com/howto/howto_css_flip_card.asp */
   text-decoration: none;
   color: #fff;
   opacity: 0.5;
+
+  transition: opacity 0.75s;
+}
+
+.circle-nav a:hover{
+  opacity: 1;
 }
 /* end of circle nav style */
